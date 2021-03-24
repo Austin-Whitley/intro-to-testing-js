@@ -36,3 +36,18 @@ describe("addOne", function() {
     //     expect(Number.isNaN(addOne([1,2,3]))).toBe(true);
     // });
 });
+describe("sayHello", function(){
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function');
+    });
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('should return "Hello, Alex!" when passed the string: "Alex"', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('should return "Hello, Pat!" when passed the string: "Pat"', function () {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+
+});
