@@ -49,5 +49,15 @@ describe("sayHello", function(){
     it('should return "Hello, Pat!" when passed the string: "Pat"', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should never return Undefined', function () {
+        expect(sayHello()).not.toBe(undefined);
+    });
+    it('should return "Hello, World! when passed the boolean value of true', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World! when a NULL value is passed.', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+
 
 });
