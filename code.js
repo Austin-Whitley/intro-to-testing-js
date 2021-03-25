@@ -19,9 +19,15 @@ function isEven(input){
     return parseFloat(input) % 2 === 0;
 }
 function isVowel(input){
-    return (input.toString().toLowerCase() === "a" || input.toString().toLowerCase() === "e" ||
-        input.toString().toLowerCase() === "i" || input.toString().toLowerCase() === "o" ||
-        input.toString().toLowerCase() === "u" );
+    // return (input.toString().toLowerCase() === "a" || input.toString().toLowerCase() === "e" ||
+    //     input.toString().toLowerCase() === "i" || input.toString().toLowerCase() === "o" ||
+    //     input.toString().toLowerCase() === "u" );
+    if(typeof input !== "string" || input.length > 1){
+        return input = false;
+    }
+    else{
+        return !!(input.match(/[aeiou]/gi));
+    }
 }
 function add(x, y){
     return parseFloat(x) + parseFloat(y);
