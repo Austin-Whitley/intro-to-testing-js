@@ -18,3 +18,8 @@ function isFive(input){
 function isEven(input){
     return parseFloat(input) % 2 === 0;
 }
+function isVowel(input){
+    return (input.toString().toLowerCase() === "a" || input.toString().toLowerCase() === "e" ||
+        input.toString().toLowerCase() === "i" || input.toString().toLowerCase() === "o" ||
+        input.toString().toLowerCase() === "u" );
+}
