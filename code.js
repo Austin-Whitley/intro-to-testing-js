@@ -23,3 +23,6 @@ function isVowel(input){
         input.toString().toLowerCase() === "i" || input.toString().toLowerCase() === "o" ||
         input.toString().toLowerCase() === "u" );
 }
+function add(x, y){
+    return parseFloat(x) + parseFloat(y);
+}
